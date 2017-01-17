@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Проверка на деление без остатка</title>
+  </head>
+  <body>
+    <script>
+
+    function div_chec() {
+      var upper_limit = 100, number; // задаем переменные
+
+      for (var i = 1; i <= upper_limit; i++) {   // создаем цикл для перебора значений от 1 до 100
+        number = i;
+        if (number % 3 == 0 && number % 5 == 0) { // проверяем делится ли число на 3 и пять без остатка
+          console.log(number + " FizzBuzz");
+        } else if (number % 5 == 0) {            // проверяем делится ли число на 5 без остатка
+          console.log(number + " Buzz");
+        } else if (number % 3 == 0) {
+          console.log(number + " Fizz");       // проверяем делится ли число на 3 без остатака
+        } else {
+          console.log(number); // если не выполняется ни одно из условий выше, то выводится одно число
+        }
+      }
+    }
+
+    div_chec() // вызываем функцию
+
+    </script>
+  </body>
+</html>
